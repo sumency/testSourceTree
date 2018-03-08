@@ -21,7 +21,7 @@
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-//哈哈
+//李西
 }
 
 
