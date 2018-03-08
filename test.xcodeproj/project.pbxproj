@@ -13,7 +13,35 @@
 		7042C94E20513D9C00B6F4C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7042C94D20513D9C00B6F4C4 /* Assets.xcassets */; };
 		7042C95120513D9C00B6F4C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7042C94F20513D9C00B6F4C4 /* LaunchScreen.storyboard */; };
 		7042C95420513D9C00B6F4C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7042C95320513D9C00B6F4C4 /* main.m */; };
+		7042C95C2051770500B6F4C4 /* GTSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7042C95B2051770500B6F4C4 /* GTSDK.framework */; };
+		7042C9652051773000B6F4C4 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7042C9642051773000B6F4C4 /* NotificationService.m */; };
+		7042C9692051773000B6F4C4 /* testNoti.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7042C9612051773000B6F4C4 /* testNoti.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7042C96F2051774800B6F4C4 /* GTExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7042C96E2051774800B6F4C4 /* GTExtensionSDK.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7042C9672051773000B6F4C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7042C93920513D9C00B6F4C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7042C9602051773000B6F4C4;
+			remoteInfo = testNoti;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7042C96D2051773000B6F4C4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7042C9692051773000B6F4C4 /* testNoti.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7042C94120513D9C00B6F4C4 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +54,12 @@
 		7042C95020513D9C00B6F4C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7042C95220513D9C00B6F4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7042C95320513D9C00B6F4C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7042C95B2051770500B6F4C4 /* GTSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTSDK.framework; sourceTree = "<group>"; };
+		7042C9612051773000B6F4C4 /* testNoti.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = testNoti.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7042C9632051773000B6F4C4 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		7042C9642051773000B6F4C4 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		7042C9662051773000B6F4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7042C96E2051774800B6F4C4 /* GTExtensionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTExtensionSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +67,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7042C95C2051770500B6F4C4 /* GTSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7042C95E2051773000B6F4C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7042C96F2051774800B6F4C4 /* GTExtensionSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				7042C94320513D9C00B6F4C4 /* test */,
+				7042C9622051773000B6F4C4 /* testNoti */,
 				7042C94220513D9C00B6F4C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				7042C94120513D9C00B6F4C4 /* test.app */,
+				7042C9612051773000B6F4C4 /* testNoti.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +103,7 @@
 		7042C94320513D9C00B6F4C4 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				7042C95A2051770500B6F4C4 /* GtSdkLib-noidfa */,
 				7042C94420513D9C00B6F4C4 /* AppDelegate.h */,
 				7042C94520513D9C00B6F4C4 /* AppDelegate.m */,
 				7042C94720513D9C00B6F4C4 /* ViewController.h */,
@@ -71,6 +117,25 @@
 			path = test;
 			sourceTree = "<group>";
 		};
+		7042C95A2051770500B6F4C4 /* GtSdkLib-noidfa */ = {
+			isa = PBXGroup;
+			children = (
+				7042C95B2051770500B6F4C4 /* GTSDK.framework */,
+			);
+			path = "GtSdkLib-noidfa";
+			sourceTree = "<group>";
+		};
+		7042C9622051773000B6F4C4 /* testNoti */ = {
+			isa = PBXGroup;
+			children = (
+				7042C96E2051774800B6F4C4 /* GTExtensionSDK.framework */,
+				7042C9632051773000B6F4C4 /* NotificationService.h */,
+				7042C9642051773000B6F4C4 /* NotificationService.m */,
+				7042C9662051773000B6F4C4 /* Info.plist */,
+			);
+			path = testNoti;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,15 +146,34 @@
 				7042C93D20513D9C00B6F4C4 /* Sources */,
 				7042C93E20513D9C00B6F4C4 /* Frameworks */,
 				7042C93F20513D9C00B6F4C4 /* Resources */,
+				7042C96D2051773000B6F4C4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7042C9682051773000B6F4C4 /* PBXTargetDependency */,
 			);
 			name = test;
 			productName = test;
 			productReference = 7042C94120513D9C00B6F4C4 /* test.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7042C9602051773000B6F4C4 /* testNoti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7042C96C2051773000B6F4C4 /* Build configuration list for PBXNativeTarget "testNoti" */;
+			buildPhases = (
+				7042C95D2051773000B6F4C4 /* Sources */,
+				7042C95E2051773000B6F4C4 /* Frameworks */,
+				7042C95F2051773000B6F4C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testNoti;
+			productName = testNoti;
+			productReference = 7042C9612051773000B6F4C4 /* testNoti.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +185,10 @@
 				ORGANIZATIONNAME = com.Qiaodu;
 				TargetAttributes = {
 					7042C94020513D9C00B6F4C4 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					7042C9602051773000B6F4C4 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -120,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				7042C94020513D9C00B6F4C4 /* test */,
+				7042C9602051773000B6F4C4 /* testNoti */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +221,13 @@
 				7042C95120513D9C00B6F4C4 /* LaunchScreen.storyboard in Resources */,
 				7042C94E20513D9C00B6F4C4 /* Assets.xcassets in Resources */,
 				7042C94C20513D9C00B6F4C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7042C95F2051773000B6F4C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +244,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7042C95D2051773000B6F4C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7042C9652051773000B6F4C4 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7042C9682051773000B6F4C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7042C9602051773000B6F4C4 /* testNoti */;
+			targetProxy = 7042C9672051773000B6F4C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7042C94A20513D9C00B6F4C4 /* Main.storyboard */ = {
@@ -280,6 +392,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A956CGTU4S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test/GtSdkLib-noidfa",
+				);
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sumency.test;
@@ -294,10 +410,50 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A956CGTU4S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test/GtSdkLib-noidfa",
+				);
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sumency.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7042C96A2051773000B6F4C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A956CGTU4S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testNoti",
+				);
+				INFOPLIST_FILE = testNoti/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumency.test.testNoti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7042C96B2051773000B6F4C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A956CGTU4S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testNoti",
+				);
+				INFOPLIST_FILE = testNoti/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumency.test.testNoti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -319,6 +475,15 @@
 			buildConfigurations = (
 				7042C95820513D9C00B6F4C4 /* Debug */,
 				7042C95920513D9C00B6F4C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7042C96C2051773000B6F4C4 /* Build configuration list for PBXNativeTarget "testNoti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7042C96A2051773000B6F4C4 /* Debug */,
+				7042C96B2051773000B6F4C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
