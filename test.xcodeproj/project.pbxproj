@@ -13,10 +13,8 @@
 		7042C94E20513D9C00B6F4C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7042C94D20513D9C00B6F4C4 /* Assets.xcassets */; };
 		7042C95120513D9C00B6F4C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7042C94F20513D9C00B6F4C4 /* LaunchScreen.storyboard */; };
 		7042C95420513D9C00B6F4C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7042C95320513D9C00B6F4C4 /* main.m */; };
-		7042C95C2051770500B6F4C4 /* GTSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7042C95B2051770500B6F4C4 /* GTSDK.framework */; };
 		7042C9652051773000B6F4C4 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7042C9642051773000B6F4C4 /* NotificationService.m */; };
 		7042C9692051773000B6F4C4 /* testNoti.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7042C9612051773000B6F4C4 /* testNoti.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7042C96F2051774800B6F4C4 /* GTExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7042C96E2051774800B6F4C4 /* GTExtensionSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +52,10 @@
 		7042C95020513D9C00B6F4C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7042C95220513D9C00B6F4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7042C95320513D9C00B6F4C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7042C95B2051770500B6F4C4 /* GTSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTSDK.framework; sourceTree = "<group>"; };
 		7042C9612051773000B6F4C4 /* testNoti.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = testNoti.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7042C9632051773000B6F4C4 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
 		7042C9642051773000B6F4C4 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
 		7042C9662051773000B6F4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7042C96E2051774800B6F4C4 /* GTExtensionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTExtensionSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7042C95C2051770500B6F4C4 /* GTSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7042C96F2051774800B6F4C4 /* GTExtensionSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +114,6 @@
 		7042C95A2051770500B6F4C4 /* GtSdkLib-noidfa */ = {
 			isa = PBXGroup;
 			children = (
-				7042C95B2051770500B6F4C4 /* GTSDK.framework */,
 			);
 			path = "GtSdkLib-noidfa";
 			sourceTree = "<group>";
@@ -128,7 +121,6 @@
 		7042C9622051773000B6F4C4 /* testNoti */ = {
 			isa = PBXGroup;
 			children = (
-				7042C96E2051774800B6F4C4 /* GTExtensionSDK.framework */,
 				7042C9632051773000B6F4C4 /* NotificationService.h */,
 				7042C9642051773000B6F4C4 /* NotificationService.m */,
 				7042C9662051773000B6F4C4 /* Info.plist */,
