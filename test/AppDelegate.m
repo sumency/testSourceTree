@@ -22,6 +22,8 @@
 
 - (void)applicationWillResignActive:(UIApplication *)application {
 //李西
+    
+    
 }
 
 
